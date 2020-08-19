@@ -3,6 +3,9 @@ import styled from "styled-components";
 import demosLogo from "../assets/img/demos-light.jpg";
 
 const Div = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #1e3236;
   width: 100%;
   height: 6vh;
@@ -31,7 +34,10 @@ const Nav = () => {
     <Div>
       {/* <NavItem to="/">HOME</NavItem>
       <NavItem to="/keywords">KEYWORDS</NavItem> */}
-      <a href="https://demos.co.uk/" style={{ display: "contents" }}>
+      <a
+        href="https://demos.co.uk/"
+        style={{ display: "contents", margin: "auto" }}
+      >
         <Img src={demosLogo} alt="demos" />
       </a>
     </Div>
