@@ -27,11 +27,12 @@ const categoryDataObject = {
 function App() {
   const [category, setCategory] = useState("Community");
   const [chartData, setChartData] = useState(data.Community);
-  let [chartDataColor1, setDataChartColor1] = useState("rgb(238, 113, 85)");
-  const [chartDataColor2, setDataChartColor2] = useState(null);
+  const [chartDataColor1, setDataChartColor1] = useState("rgb(238, 113, 85)");
+  const [chartDataColorArr, setDataChartColorArr] = useState([]);
   const [selectedButton, setSelectedButton] = useState(buttonFocus);
   const [selectTwoCategories, setSelectTwoCategories] = useState(false);
   const [toggledData, setToggledData] = useState(null);
+  const [tempColor, setTempColor] = useState(null);
 
   useEffect(() => {
     setSelectedButton({
@@ -54,11 +55,11 @@ function App() {
   function handleClickTwo(e) {
     let target = e.target;
     if (!toggledData) {
+      setTempColor(target.style.backgroundColor);
       setSelectedButton({
         ...buttonFocus,
         [target.value]: true,
       });
-      chartDataColor1 = target.style.backgroundColor;
     }
     if (toggledData) {
       setSelectedButton({
@@ -66,7 +67,7 @@ function App() {
         ...selectedButton,
         [target.value]: true,
       });
-      setDataChartColor2(target.style.backgroundColor);
+      setDataChartColorArr([tempColor, target.style.backgroundColor]);
     }
     setToggledData((toggledData) => {
       if (!toggledData) {
@@ -185,7 +186,7 @@ function App() {
       <Chart
         data={chartData}
         chartDataColor1={chartDataColor1}
-        chartDataColor2={chartDataColor2}
+        chartDataColorArr={chartDataColorArr}
         category={category}
       />
     </div>

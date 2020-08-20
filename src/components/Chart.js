@@ -8,14 +8,10 @@ am4core.useTheme(am4themes_animated);
 const Chart = ({
   data,
   chartDataColor1,
-  chartDataColor2,
+  chartDataColorArr,
   chartGridArea,
   category,
 }) => {
-  // const chartDataColor = chartDataColor2
-  //   ? `"linear-gradient(to right, ${chartDataColor2}, ${chartDataColor2})"`
-  //   : chartDataColor1;
-
   const chart = useRef(null);
 
   useLayoutEffect(() => {
@@ -31,12 +27,12 @@ const Chart = ({
     series.dataFields.word = "tag";
     series.dataFields.value = "count";
 
-    if (chartDataColor2 !== null) {
+    if (chartDataColorArr.length === 2) {
       series.heatRules.push({
         target: series.labels.template,
         property: "fill",
-        min: am4core.color(chartDataColor1),
-        max: am4core.color(chartDataColor2),
+        min: am4core.color(chartDataColorArr[0]),
+        max: am4core.color(chartDataColorArr[1]),
         dataField: "value",
       });
     } else {
@@ -68,7 +64,7 @@ const Chart = ({
     return () => {
       x.dispose();
     };
-  }, [data, chartDataColor1, chartDataColor2, category]);
+  }, [data, chartDataColor1, chartDataColorArr, category]);
   return (
     <div
       id="chartdiv"
