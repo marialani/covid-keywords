@@ -5,7 +5,17 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
 am4core.useTheme(am4themes_animated);
 
-const Chart = ({ data, chartDataColor1, chartGridArea, category }) => {
+const Chart = ({
+  data,
+  chartDataColor1,
+  chartDataColor2,
+  chartGridArea,
+  category,
+}) => {
+  // const chartDataColor = chartDataColor2
+  //   ? `"linear-gradient(to right, ${chartDataColor2}, ${chartDataColor2})"`
+  //   : chartDataColor1;
+
   const chart = useRef(null);
 
   useLayoutEffect(() => {
@@ -20,13 +30,23 @@ const Chart = ({ data, chartDataColor1, chartGridArea, category }) => {
     series.dataFields.word = "tag";
     series.dataFields.value = "count";
 
-    series.heatRules.push({
-      target: series.labels.template,
-      property: "fill",
-      min: am4core.color(chartDataColor1),
-      max: am4core.color("#CC00CC"),
-      dataField: "value",
-    });
+    if (chartDataColor2 !== null) {
+      series.heatRules.push({
+        target: series.labels.template,
+        property: "fill",
+        min: am4core.color(chartDataColor1),
+        max: am4core.color(chartDataColor2),
+        dataField: "value",
+      });
+    } else {
+      series.heatRules.push({
+        target: series.labels.template,
+        property: "fill",
+        min: am4core.color(chartDataColor1),
+        max: am4core.color(chartDataColor1),
+        dataField: "value",
+      });
+    }
 
     // series.labels.template.url = "tagged/{word}";
     // series.labels.template.urlTarget = "_blank";
@@ -47,7 +67,7 @@ const Chart = ({ data, chartDataColor1, chartGridArea, category }) => {
     return () => {
       x.dispose();
     };
-  }, [data, chartDataColor1, category]);
+  }, [data, chartDataColor1, chartDataColor2, category]);
   return (
     <div
       id="chartdiv"

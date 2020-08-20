@@ -1,6 +1,6 @@
 // chart data
 export const data = {
-  communityData: [
+  Community: [
     {
       tag: "Affluent",
       count: "19",
@@ -190,7 +190,7 @@ export const data = {
       count: "11",
     },
   ],
-  democracyData: [
+  Democracy: [
     {
       tag: "Cummings",
       count: "1364",
@@ -404,7 +404,7 @@ export const data = {
       count: "189",
     },
   ],
-  educationData: [
+  Education: [
     {
       tag: "Learning",
       count: "1382",
@@ -602,7 +602,7 @@ export const data = {
       count: "20",
     },
   ],
-  healthData: [
+  Health: [
     {
       tag: "Hospital",
       count: "964",
@@ -800,7 +800,7 @@ export const data = {
       count: "49",
     },
   ],
-  homelifeData: [
+  Homelife: [
     { tag: "Exercise", count: 1493 },
     { tag: "Garden", count: 1343 },
     { tag: "Walks", count: 503 },
@@ -868,7 +868,7 @@ export const data = {
     { tag: "Sisters", count: 32 },
     { tag: "Baked", count: 31 },
   ],
-  jobsData: [
+  Jobs: [
     { tag: "Office", count: 1320 },
     { tag: "Colleagues", count: 678 },
     { tag: "Employer", count: 601 },
@@ -925,7 +925,7 @@ export const data = {
     { tag: "Bosses", count: 22 },
     { tag: "Productively", count: 21 },
   ],
-  moneyData: [
+  Money: [
     { tag: "Money", count: 2665 },
     { tag: "Spending", count: 2144 },
     { tag: "Income", count: 1737 },
@@ -983,7 +983,7 @@ export const data = {
     { tag: "Takeaways", count: 81 },
     { tag: "Earnings", count: 80 },
   ],
-  otherData: [
+  Other: [
     { tag: "Climate", count: 396 },
     { tag: "Planet", count: 199 },
     { tag: "Wildlife", count: 141 },
@@ -1057,7 +1057,7 @@ export const data = {
     { tag: "Overwhelmingly", count: 11 },
     { tag: "Stars", count: 11 },
   ],
-  technologyData: [
+  Tech: [
     { tag: "Technology", count: 1694 },
     { tag: "App", count: 970 },
     { tag: "Internet", count: 823 },
@@ -1130,7 +1130,7 @@ export const data = {
     { tag: "Proficient", count: 11 },
     { tag: "Videoconferencing", count: 11 },
   ],
-  transportData: [
+  Transport: [
     { tag: "20mph", count: 11 },
     { tag: "Battery", count: 40 },
     { tag: "Bike", count: 258 },
@@ -1182,65 +1182,65 @@ export const data = {
     { tag: "Underground", count: 46 },
     { tag: "Vehicles", count: 180 },
   ],
-  communityDemocracyData: [
+  CommunityDemocracy: [
     { tag: "Parish", count: 52 },
     { tag: "Goodwill", count: 25 },
     { tag: "Leaflet", count: 17 },
     { tag: "Local", count: 16 },
   ],
-  communityHomelifeData: [
+  CommunityHomelife: [
     { tag: "Closer", count: 344 },
     { tag: "Chatting", count: 103 },
     { tag: "Plants", count: 92 },
     { tag: "Friendship", count: 35 },
     { tag: "Bbqs", count: 19 },
   ],
-  communityJobsData: [
+  CommunityJobs: [
     { tag: "Fundraising", count: 19 },
     { tag: "Camaraderie", count: 18 },
     { tag: "Swap", count: 11 },
   ],
-  communityMoneyData: [
+  CommunityMoney: [
     { tag: "Tesco", count: 84 },
     { tag: "Shopped", count: 56 },
     { tag: "Flour", count: 53 },
     { tag: "Toys", count: 32 },
     { tag: "Butchers", count: 27 },
   ],
-  communityOtherData: [
+  CommunityOther: [
     { tag: "Litter", count: 148 },
     { tag: "Clapping", count: 113 },
     { tag: "Kindness", count: 84 },
     { tag: "Littering", count: 47 },
   ],
-  communityTechData: [
+  CommunityTech: [
     { tag: "Whatsapp", count: 363 },
     { tag: "Facebook", count: 315 },
   ],
-  communityTransportData: [
+  CommunityTransport: [
     { tag: "Villages", count: 31 },
     { tag: "Lane", count: 24 },
   ],
-  communityHealthData: [{ tag: "Prescriptions", count: 199 }],
-  democracyHealthData: [
+  CommunityHealth: [{ tag: "Prescriptions", count: 199 }],
+  DemocracyHealth: [
     { tag: "Timely", count: 32 },
     { tag: "Underfunding", count: 30 },
     { tag: "Emailed", count: 26 },
     { tag: "Bothering", count: 23 },
   ],
-  democracyHomelifeData: [{ tag: "Resist", count: 14 }],
-  democracyJobsData: [
+  DemocracyHomelife: [{ tag: "Resist", count: 14 }],
+  DemocracyJobs: [
     { tag: "Autonomy", count: 12 },
     { tag: "Shifting", count: 12 },
     { tag: "Inflexible", count: 11 },
   ],
-  democracyMoneyData: [
+  DemocracyMoney: [
     { tag: "Deals", count: 52 },
     { tag: "Ad Hoc", count: 22 },
     { tag: "Horizon", count: 15 },
     { tag: "Whim", count: 12 },
   ],
-  democracyOtherData: [
+  DemocracyOther: [
     { tag: "Nation", count: 262 },
     { tag: "Leaders", count: 155 },
     { tag: "China", count: 117 },
@@ -1250,7 +1250,7 @@ export const data = {
     { tag: "Tragic", count: 32 },
     { tag: "Justice", count: 31 },
   ],
-  democracyTechData: [
+  DemocracyTech: [
     { tag: "Track", count: 487 },
     { tag: "Trace", count: 420 },
     { tag: "Tracing", count: 167 },
@@ -1259,9 +1259,9 @@ export const data = {
     { tag: "Serco", count: 14 },
     { tag: "Disinformation", count: 13 },
   ],
-  democracyTransportData: [{ tag: "Mandated", count: 13 }],
-  educationHealthData: [{ tag: "Examinations", count: 21 }],
-  educationHomelifeData: [
+  DemocracyTransport: [{ tag: "Mandated", count: 13 }],
+  EducationHealth: [{ tag: "Examinations", count: 21 }],
+  EducationHomelife: [
     { tag: "Daughter", count: 1461 },
     { tag: "Son", count: 1342 },
     { tag: "Eldest", count: 215 },
@@ -1269,7 +1269,7 @@ export const data = {
     { tag: "Motivate", count: 102 },
     { tag: "Patience", count: 23 },
   ],
-  educationJobsData: [
+  EducationJobs: [
     { tag: "Students", count: 432 },
     { tag: "Homeschooling", count: 163 },
     { tag: "Finishing", count: 53 },
@@ -1277,50 +1277,50 @@ export const data = {
     { tag: "Marking", count: 36 },
     { tag: "Pastoral", count: 19 },
   ],
-  educationMoneyData: [{ tag: "Fees", count: 152 }],
-  educationOtherData: [{ tag: "League", count: 15 }],
-  healthHomelifeData: [
+  EducationMoney: [{ tag: "Fees", count: 152 }],
+  EducationOther: [{ tag: "League", count: 15 }],
+  HealthHomelife: [
     { tag: "Pregnant", count: 111 },
     { tag: "Dementia", count: 99 },
     { tag: "Meditation", count: 42 },
     { tag: "Asthmatic", count: 38 },
     { tag: "Alzheimers", count: 12 },
   ],
-  healthMoneyData: [{ tag: "Knock-On", count: 13 }],
-  healthOtherData: [
+  HealthMoney: [{ tag: "Knock-On", count: 13 }],
+  HealthOther: [
     { tag: "Nurses", count: 130 },
     { tag: "Drugs", count: 49 },
     { tag: "Heroes", count: 30 },
   ],
-  homelifeJobsData: [
+  HomelifeJobs: [
     { tag: "Kitchen", count: 80 },
     { tag: "Bedroom", count: 79 },
     { tag: "Separation", count: 54 },
     { tag: "Adjustment", count: 32 },
     { tag: "Bathroom", count: 19 },
   ],
-  homelifeMoneyData: [
+  HomelifeMoney: [
     { tag: "Eating", count: 750 },
     { tag: "Meals", count: 450 },
     { tag: "Meal", count: 108 },
     { tag: "Dinner", count: 73 },
   ],
-  homelifeOtherData: [
+  HomelifeOther: [
     { tag: "Spring", count: 52 },
     { tag: "Flowers", count: 38 },
     { tag: "Grief", count: 23 },
     { tag: "Miserable", count: 23 },
     { tag: "Hectic", count: 21 },
   ],
-  homelifeTechData: [
+  HomelifeTech: [
     { tag: "Facetime", count: 193 },
     { tag: "Quizzes", count: 99 },
     { tag: "Quiz", count: 76 },
     { tag: "Messenger", count: 31 },
     { tag: "Lifesaver", count: 18 },
   ],
-  homelifeTransportData: [{ tag: "Walking", count: 1087 }],
-  jobsMoneyData: [
+  HomelifeTransport: [{ tag: "Walking", count: 1087 }],
+  JobsMoney: [
     { tag: "Furloughed", count: 1082 },
     { tag: "Furlough", count: 855 },
     { tag: "Employment", count: 368 },
@@ -1331,12 +1331,12 @@ export const data = {
     { tag: "Redundancies", count: 168 },
     { tag: "Unemployed", count: 133 },
   ],
-  jobsOtherData: [
+  JobsOther: [
     { tag: "Manufacturing", count: 55 },
     { tag: "Production", count: 53 },
     { tag: "Trials", count: 13 },
   ],
-  jobsTechData: [
+  JobsTech: [
     { tag: "Meetings", count: 748 },
     { tag: "Teams", count: 338 },
     { tag: "Microsoft", count: 125 },
@@ -1345,41 +1345,28 @@ export const data = {
     { tag: "Screens", count: 76 },
     { tag: "Webinars", count: 35 },
   ],
-  moneyOtherData: [
+  MoneyOther: [
     { tag: "Taxes", count: 121 },
     { tag: "Markets", count: 61 },
     { tag: "Consumerism", count: 55 },
     { tag: "Meat", count: 43 },
     { tag: "Re-Evaluate", count: 31 },
   ],
-  moneyTechData: [{ tag: "Subscription", count: 16 }],
-  moneyTransportData: [
+  MoneyTech: [{ tag: "Subscription", count: 16 }],
+  MoneyTransport: [
     { tag: "Ticket", count: 45 },
     { tag: "Fares", count: 44 },
     { tag: "Diesel", count: 35 },
     { tag: "Tank", count: 21 },
   ],
-  otherTechData: [
+  OtherTech: [
     { tag: "Invasive", count: 16 },
     { tag: "Overload", count: 15 },
     { tag: "Hysterical", count: 12 },
   ],
-  otherTransportData: [
+  OtherTransport: [
     { tag: "Pollution", count: 410 },
     { tag: "Affordable", count: 79 },
     { tag: "Planes", count: 67 },
   ],
 };
-// keywords
-// export const keywordCategories = [
-//   "Community",
-//   "Democracy",
-//   "Education",
-//   "Health",
-//   "Homelife",
-//   "Jobs",
-//   "Money",
-//   "Other",
-//   "Tech",
-//   "Transport",
-// ];

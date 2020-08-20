@@ -3,35 +3,33 @@ import React from "react";
 const KeywordButton = ({
   category,
   categorybgColor,
-  categoryGridArea,
   onClick,
   selectedButton,
 }) => {
   return (
     <button
       style={{
-        // height/width/margin, page MC
-        height: "100px",
-        width: "100px",
-        margin: "auto",
-        borderRadius: "50%",
+        margin: "0.25rem 1rem",
+        borderRadius: "2rem",
         border: "2px solid #1d3336",
         backgroundColor: categorybgColor,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         color: "#1e3236",
-        padding: "1rem",
+        padding: "0.3em 1.2em",
         fontWeight: "800",
+        fontSize: "0.8rem",
         outline: "none",
-        gridArea: categoryGridArea,
-        WebkitBoxShadow: selectedButton && " 0 0 15px #51cbee",
+        WebkitBoxShadow: selectedButton && "0px 0px 20px rgb(3 249 249)",
         zIndex: "1",
+        textAlign: "center",
+        cursor: "pointer",
       }}
       value={category}
       onClick={onClick}
     >
-      {category}
+      {category.toUpperCase()}
     </button>
   );
 };

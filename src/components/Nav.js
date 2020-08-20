@@ -8,9 +8,10 @@ const Div = styled.div`
   align-items: center;
   background: #1e3236;
   width: 100%;
-  height: 6vh;
+  height: 8vh;
   display: flex;
   align-items: center;
+  margin: 1rem 0;
 `;
 
 const Img = styled.img`
