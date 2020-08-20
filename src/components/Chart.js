@@ -22,9 +22,10 @@ const Chart = ({
     let x = am4core.create("chartdiv", am4plugins_wordCloud.WordCloud);
     x.fontFamily = "Courier New";
     let series = x.series.push(new am4plugins_wordCloud.WordCloudSeries());
+    series.angles = [0];
     series.randomness = 0.4;
     // series.accuracy = 0;
-    series.rotationThreshold = 0.5;
+    series.rotationThreshold = 0;
 
     series.data = data;
     series.dataFields.word = "tag";
