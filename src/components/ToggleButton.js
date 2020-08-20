@@ -23,7 +23,12 @@ const ToggleButton = ({ onClick }) => {
       >
         Select two categories
       </p>
-      <Toggle defaultChecked={false} icons={false} onClick={onClick} />
+      <Toggle
+        defaultChecked={false}
+        icons={false}
+        onClick={onClick}
+        className="toggle"
+      />
     </label>
   );
 };

@@ -43,6 +43,7 @@ function App() {
 
   function handleClick(e) {
     let target = e.target;
+    setDataChartColorArr([]);
     setDataChartColor1(target.style.backgroundColor);
     setChartData(categoryDataObject[target.value]);
     setCategory(target.value);
@@ -97,6 +98,11 @@ function App() {
     setToggledData(null);
   }
 
+  function handleToggle() {
+    setSelectTwoCategories((value) => !value);
+    setSelectedButton(buttonFocus);
+  }
+
   let keywordButtonClick = selectTwoCategories ? handleClickTwo : handleClick;
 
   return (
@@ -110,7 +116,7 @@ function App() {
     >
       {/* change to header */}
       <Nav />
-      <ToggleButton onClick={() => setSelectTwoCategories((value) => !value)} />
+      <ToggleButton onClick={handleToggle} />
       <div
         style={{
           display: "flex",
