@@ -1,11 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { data } from "./data/data";
-
+import styled from "styled-components";
 // Components
 import Chart from "./components/Chart";
 // import Nav from "./components/Nav";
 import KeywordButton from "./components/KeywordButton";
 import ToggleButton from "./components/ToggleButton";
+
+const Div = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: "0.5rem 1rem";
+  background-color: #1e3236;
+  max-width: 1024px;
+  align-self: center;
+  @media (max-width: 330px) {
+    justify-content: space-around;
+  }
+`;
 
 const buttonFocus = {
   Community: false,
@@ -117,17 +130,7 @@ function App() {
       {/* change to header */}
       {/* <Nav /> */}
       <ToggleButton onClick={handleToggle} />
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          padding: "0.5rem 1rem",
-          backgroundColor: "#1E3236",
-          maxWidth: "1024px",
-          alignSelf: "center",
-        }}
-      >
+      <Div>
         <KeywordButton
           category="Community"
           categorybgColor="#ee7155"
@@ -147,10 +150,10 @@ function App() {
           selectedButton={selectedButton.Education}
         />
         <KeywordButton
-          category="Health"
-          categorybgColor="#83CCD3"
+          category="Transport"
+          categorybgColor="darkseagreen"
           onClick={keywordButtonClick}
-          selectedButton={selectedButton.Health}
+          selectedButton={selectedButton.Transport}
         />
         <KeywordButton
           category="Homelife"
@@ -158,17 +161,12 @@ function App() {
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Homelife}
         />
+
         <KeywordButton
-          category="Jobs"
-          categorybgColor="darkorange"
+          category="Health"
+          categorybgColor="#83CCD3"
           onClick={keywordButtonClick}
-          selectedButton={selectedButton.Jobs}
-        />
-        <KeywordButton
-          category="Money"
-          categorybgColor="#e0f1f8"
-          onClick={keywordButtonClick}
-          selectedButton={selectedButton.Money}
+          selectedButton={selectedButton.Health}
         />
         <KeywordButton
           category="Tech"
@@ -176,11 +174,19 @@ function App() {
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Tech}
         />
+
         <KeywordButton
-          category="Transport"
-          categorybgColor="darkseagreen"
+          category="Jobs"
+          categorybgColor="darkorange"
           onClick={keywordButtonClick}
-          selectedButton={selectedButton.Transport}
+          selectedButton={selectedButton.Jobs}
+        />
+
+        <KeywordButton
+          category="Money"
+          categorybgColor="#e0f1f8"
+          onClick={keywordButtonClick}
+          selectedButton={selectedButton.Money}
         />
         <KeywordButton
           category="Other"
@@ -188,7 +194,7 @@ function App() {
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Other}
         />
-      </div>
+      </Div>
       <Chart
         data={chartData}
         chartDataColor1={chartDataColor1}
