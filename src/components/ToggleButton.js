@@ -10,7 +10,7 @@ const ToggleButton = ({ onClick }) => {
         display: "flex",
         justifyContent: "flex-end",
         alignItems: "center",
-        paddingRight: "2rem",
+        padding: "1rem 2rem",
       }}
     >
       <p

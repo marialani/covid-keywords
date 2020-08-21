@@ -3,7 +3,7 @@ import { data } from "./data/data";
 
 // Components
 import Chart from "./components/Chart";
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
 import KeywordButton from "./components/KeywordButton";
 import ToggleButton from "./components/ToggleButton";
 
@@ -115,7 +115,7 @@ function App() {
       }}
     >
       {/* change to header */}
-      <Nav />
+      {/* <Nav /> */}
       <ToggleButton onClick={handleToggle} />
       <div
         style={{
