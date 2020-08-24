@@ -31,16 +31,21 @@ const Chart = ({
       series.heatRules.push({
         target: series.labels.template,
         property: "fill",
-        min: am4core.color(chartDataColorArr[0]),
-        max: am4core.color(chartDataColorArr[1]),
+
+        // min: am4core.color(chartDataColorArr[0]),
+        // max: am4core.color(chartDataColorArr[1]),
+        min: am4core.color("rgb(238, 113, 85)"),
+        max: am4core.color("rgb(238, 113, 85)"),
         dataField: "value",
       });
     } else {
       series.heatRules.push({
         target: series.labels.template,
         property: "fill",
-        min: am4core.color(chartDataColor1),
-        max: am4core.color(chartDataColor1),
+        // min: am4core.color(chartDataColor1),
+        // max: am4core.color(chartDataColor1),
+        min: am4core.color("rgb(238, 113, 85)"),
+        max: am4core.color("rgb(238, 113, 85)"),
         dataField: "value",
       });
     }

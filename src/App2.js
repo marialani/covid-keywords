@@ -15,9 +15,9 @@ const Div = styled.div`
   background-color: #1e3236;
   max-width: 1024px;
   align-self: center;
-  @media (max-width: 330px) {
-    justify-content: space-around;
-  }
+  // @media (max-width: 600px) {
+  //   justify-content: space-around;
+  // }
 `;
 
 const buttonFocus = {
@@ -139,58 +139,67 @@ function App() {
         />
         <KeywordButton
           category="Democracy"
-          categorybgColor="#feebb3"
+          // categorybgColor="#feebb3"
+          categorybgColor="#ee7155"
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Democracy}
         />
         <KeywordButton
           category="Education"
-          categorybgColor="#bfc6cf"
+          // categorybgColor="#bfc6cf"
+          categorybgColor="#ee7155"
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Education}
         />
         <KeywordButton
           category="Transport"
-          categorybgColor="darkseagreen"
+          // categorybgColor="darkseagreen"
+          categorybgColor="#ee7155"
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Transport}
         />
         <KeywordButton
           category="Homelife"
-          categorybgColor="darkgoldenrod"
+          // categorybgColor="darkgoldenrod"
+          categorybgColor="#ee7155"
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Homelife}
         />
 
         <KeywordButton
           category="Health"
-          categorybgColor="#83CCD3"
+          // categorybgColor="#83CCD3"
+          categorybgColor="#ee7155"
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Health}
         />
         <KeywordButton
           category="Tech"
-          categorybgColor="deepskyblue"
+          // categorybgColor="deepskyblue"
+          categorybgColor="#ee7155"
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Tech}
         />
 
         <KeywordButton
           category="Jobs"
-          categorybgColor="darkorange"
+          // categorybgColor="darkorange"
+          categorybgColor="#ee7155"
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Jobs}
         />
 
         <KeywordButton
           category="Money"
-          categorybgColor="#e0f1f8"
+          // categorybgColor="#e0f1f8"
+          categorybgColor="#ee7155"
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Money}
         />
         <KeywordButton
           category="Other"
-          categorybgColor="lightsalmon"
+          // categorybgColor="lightsalmon"
+          categorybgColor="#ee7155"
           onClick={keywordButtonClick}
           selectedButton={selectedButton.Other}
         />

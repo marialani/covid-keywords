@@ -1,4 +1,11 @@
 import React from "react";
+import styled from "styled-components";
+
+const Button = styled.button`
+  @media (max-width: 600px) {
+    font-size: 0.5rem !important;
+  }
+`;
 
 const KeywordButton = ({
   category,
@@ -7,7 +14,7 @@ const KeywordButton = ({
   selectedButton,
 }) => {
   return (
-    <button
+    <Button
       style={{
         margin: "0.25rem 1rem",
         borderRadius: "2rem",
@@ -30,7 +37,7 @@ const KeywordButton = ({
       onClick={onClick}
     >
       {category.toUpperCase()}
-    </button>
+    </Button>
   );
 };
 

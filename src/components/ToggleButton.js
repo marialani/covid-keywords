@@ -1,6 +1,13 @@
 import Toggle from "react-toggle";
 import "react-toggle/style.css";
 import React from "react";
+import styled from "styled-components";
+
+const P = styled.p`
+  @media (max-width: 600px) {
+    font-size: 0.75rem !important;
+  }
+`;
 
 const ToggleButton = ({ onClick }) => {
   return (
@@ -13,7 +20,7 @@ const ToggleButton = ({ onClick }) => {
         padding: "1rem 2rem",
       }}
     >
-      <p
+      <P
         style={{
           color: "white",
           fontSize: "1.1rem",
@@ -22,7 +29,7 @@ const ToggleButton = ({ onClick }) => {
         }}
       >
         Select two categories
-      </p>
+      </P>
       <Toggle
         defaultChecked={false}
         icons={false}
