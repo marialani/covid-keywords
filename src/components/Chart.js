@@ -16,14 +16,14 @@ const Chart = ({
 
   useLayoutEffect(() => {
     let x = am4core.create("chartdiv", am4plugins_wordCloud.WordCloud);
-    x.fontFamily = "Courier New";
+    x.fontFamily = "Prompt";
     let series = x.series.push(new am4plugins_wordCloud.WordCloudSeries());
     series.angles = [0];
     series.randomness = 0.4;
     // series.accuracy = 0;
     series.rotationThreshold = 0;
-    series.minFontSize = 25;
-    series.maxFontSize = 75;
+    series.minFontSize = 10;
+    series.maxFontSize = 150;
 
     series.data = data;
     series.dataFields.word = "tag";
