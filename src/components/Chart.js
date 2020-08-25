@@ -22,6 +22,8 @@ const Chart = ({
     series.randomness = 0.4;
     // series.accuracy = 0;
     series.rotationThreshold = 0;
+    series.minFontSize = 25;
+    series.maxFontSize = 75;
 
     series.data = data;
     series.dataFields.word = "tag";
