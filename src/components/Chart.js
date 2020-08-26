@@ -20,10 +20,10 @@ const Chart = ({
     let series = x.series.push(new am4plugins_wordCloud.WordCloudSeries());
     series.angles = [0];
     series.randomness = 0.4;
-    // series.accuracy = 0;
+    series.accuracy = 0;
     series.rotationThreshold = 0;
-    series.minFontSize = 10;
-    series.maxFontSize = 150;
+    // series.minFontSize = 10;
+    series.maxFontSize = 120;
 
     series.data = data;
     series.dataFields.word = "tag";
