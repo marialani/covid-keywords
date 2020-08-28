@@ -3,7 +3,6 @@ import { data } from "./data/data";
 import styled from "styled-components";
 // Components
 import Chart from "./components/Chart";
-// import Nav from "./components/Nav";
 import KeywordButton from "./components/KeywordButton";
 import ToggleButton from "./components/ToggleButton";
 
